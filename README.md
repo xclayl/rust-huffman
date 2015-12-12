@@ -36,12 +36,12 @@ let ot = huffman::code(v);
 let t = ot.unwrap();
 
 match *t.left {
-    HuffmanNode::HuffmanLeaf(ref l) => /* do something with the left node */,
+    HuffmanNode::HuffmanLeaf(ref l) => /* do something with the left node. l.item contains the char. */,
     HuffmanNode::HuffmanBranch(ref b) => /* do something with the left node */,
 };    
 
 match *t.right {
-    HuffmanNode::HuffmanLeaf(ref l) => /* do something with the right node */,
+    HuffmanNode::HuffmanLeaf(ref l) => /* do something with the right node. l.item contains the char. */,
     HuffmanNode::HuffmanBranch(ref b) => /* do something with the right node */,
 };  
 ```
