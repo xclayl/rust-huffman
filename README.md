@@ -32,7 +32,7 @@ let v = vec!(
 // perform the coding
 let ot = huffman::code(v);
 
-// which returns an Options<HuffmanBranch> (None is returned when the input vector contains 0 or 1 items)
+// which returns an Option<HuffmanBranch<T>> (None is returned when the input vector contains 0 or 1 items)
 let t = ot.unwrap();
 
 match *t.left {
