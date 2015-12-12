@@ -60,3 +60,8 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+# Hg
+.hgignore
+.hg/
+Cargo.lock
